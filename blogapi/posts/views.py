@@ -33,7 +33,7 @@ class UserDetail(generics.RetrieveUpdateDestroyAPIView):
 class PostViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly, )
     queryset = Post.objects.all()
-    seriaizer_class = PostSerializer
+    serializer_class = PostSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
